@@ -51,4 +51,4 @@ def eval_polish(work):
 
 xs = read_all('input_18')
 
-print(sum([eval_polish(polish(x)) for x in xs]))
+print(sum(eval_polish(polish(x)) for x in xs))
