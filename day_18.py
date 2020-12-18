@@ -32,10 +32,8 @@ def polish(s):
 
 
 def eval_polish(work):
-    work.reverse()
     stack = []
-    while work:
-        cmd = work.pop()
+    for cmd in work:
         if cmd == '*':
             a = stack.pop()
             b = stack.pop()
